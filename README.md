@@ -9,7 +9,7 @@
 - _Kopiraj_ označeno v odložišče: Ctrl+C (**C**opy)
 - _Izreži_ označeno v odložišče: Ctrl+X
 - _Prilepi_ vsebino odložišča: Ctrl+V 
-- _Išči_ po dokumentu: Ctrl+F 
+- _Išči_ po dokumentu: Ctrl+F (**F**ind)
 - Preklapljanje med odprtimi elementi: Alt+Tab
 
 <!-- 2. nivojski razdelek -->
