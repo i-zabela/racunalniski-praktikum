@@ -111,24 +111,27 @@ katere podatke naj vsebujejo.
 % Kot pri razdelkih si pomagajte z orodjem _Replace_ in regularnimi izrazi -- 
 % prav vam bo prišel isti vzorec za poljuben niz znakov, le da bo zdaj obdan z dvema poševnicama.
 
-   Razred \emph{Profesor} vsebuje osebne podatke profesorja (ime in priimek) ter
-   podatke o predmetih, ki jih predava. Hkrati moramo za vsako uro v tednu vedeti, če
-   je profesor takrat že zaseden, da mu slučajno ne bi dodelili dveh predavanj v istem
-   časovnem terminu. To je najlažje preverjati s pomočjo tabele zasedenosti, ki je
-   podrobneje opisana na koncu poglavja.
-
-   Razred \emph{Skupina} predstavlja skupino študentov. Kot podatke torej potrebujemo
-   smer skupine (npr.~pedagoška matematika) ter število študentov v njej. Podobno kot pri
-   profesorjih, tudi tukaj potrebujemo tabelo zasedenosti.
-
-   Razred \emph{Predavalnica} nosi podatke o kapaciteti predavalnice, njeno oznako
-   ter podatke o zasedenosti, ki so predstavljeni s tabelo.
-
-   Razred \emph{Predmet} vsebuje podatke o posameznih predmetih. Kot podatke tega
-   objekta je smiselno navesti ime predmeta ter tedensko število ur njegove izvedbe.
-   Zanima nas tudi, katerim skupinam je predmet namenjen, ter v katerem semestru se bo
-   predaval.
-
+  
+  \begin{itemize}
+    \item Razred \emph{Profesor} vsebuje osebne podatke profesorja (ime in priimek) ter
+    podatke o predmetih, ki jih predava. Hkrati moramo za vsako uro v tednu vedeti, če
+    je profesor takrat že zaseden, da mu slučajno ne bi dodelili dveh predavanj v istem
+    časovnem terminu. To je najlažje preverjati s pomočjo tabele zasedenosti, ki je
+    podrobneje opisana na koncu poglavja.
+ 
+    \item Razred \emph{Skupina} predstavlja skupino študentov. Kot podatke torej potrebujemo
+    smer skupine (npr.~pedagoška matematika) ter število študentov v njej. Podobno kot pri
+    profesorjih, tudi tukaj potrebujemo tabelo zasedenosti.
+ 
+    \item Razred \emph{Predavalnica} nosi podatke o kapaciteti predavalnice, njeno oznako
+    ter podatke o zasedenosti, ki so predstavljeni s tabelo.
+ 
+    \item Razred \emph{Predmet} vsebuje podatke o posameznih predmetih. Kot podatke tega
+    objekta je smiselno navesti ime predmeta ter tedensko število ur njegove izvedbe.
+    Zanima nas tudi, katerim skupinam je predmet namenjen, ter v katerem semestru se bo
+    predaval.
+  \end{itemize}
+\noindent
 % Spodnja vrstica ne začne novega odstavka, zato ne bi smela biti zamaknjena.
 % To popravite z ukazom `\noindent` ali pa tako, da odstranite prazno vrstico.
 % (Nekoliko lepše izgleda, če v prazno vrstico vstavite % za komentar.)
@@ -149,8 +152,8 @@ dovolj, če podamo zasedenost le za en teden.
 Tip vrednosti tabele ni striktno določen. Tako bi nekateri programerji uporabili
 celoštevilsko tabelo, kjer bi vrednost 1 pomenila, da je oseba zasedena, vrednost 0
 pa bi predstavljala njeno dosegljivost. Podobno bi postopali, če bi izbrali logični
-tip (npr.~bool v C++), kjer bi vrednost true predstavljala
-dosegljivost, false pa zasedenost.
+tip (npr.~\verb|bool| v C++), kjer bi vrednost \verb|true| predstavljala
+dosegljivost, \verb|false| pa zasedenost.
 
 \subsection{Omejitve}% podrazdelek
 
@@ -168,15 +171,18 @@ Poglejmo si nekaj omejitev, ki jih urnik ne sme kršiti:
 
 % Vsaka od vrstic v okolju `itemize` je en element naštevanja.
 % začetek okolja itemize
-   V urnik moramo razdeliti vse ure vseh predmetov.
-   Noben profesor ne sme imeti več predavanj hkrati.
-   Nobena skupina ne sme imeti več predavanj hkrati.
-   Nobena predavalnica ne sme biti dodeljena večim predavanjem hkrati.
-   Predavalnica mora imeti zadostno kapaciteto.
-   Predavanja posebne vrste (npr.~vaje iz računalništva) se morajo izvajati v ustrezni predavalnici.
-   Urnik mora zadoščati zastavljenemu časovnemu okvirju (npr.~od sedmih zjutraj do osmih zvečer).
+   
+   \begin{itemize}
+      \item V urnik moramo razdeliti vse ure vseh predmetov.
+      \item Noben profesor ne sme imeti več predavanj hkrati.
+      \item Nobena skupina ne sme imeti več predavanj hkrati.
+      \item Nobena predavalnica ne sme biti dodeljena večim predavanjem hkrati.
+      \item Predavalnica mora imeti zadostno kapaciteto.
+      \item Predavanja posebne vrste (npr.~vaje iz računalništva) se morajo izvajati v ustrezni predavalnici.
+      \item Urnik mora zadoščati zastavljenemu časovnemu okvirju (npr.~od sedmih zjutraj do osmih zvečer).
+   \end{itemize}
 % konec okolja itemize
-
+\noindent
 % Spodnja vrstica ne začne novega odstavka, zato ne bi smela biti zamaknjena.
 % To popravite z ukazom `\noindent` ali pa tako, da odstranite prazno vrstico.
 % (Nekoliko lepše izgleda, če v prazno vrstico vstavite % za komentar.)
@@ -197,14 +203,17 @@ poskrbel, da se bo zadostilo večini le-teh. Naštejmo nekaj izmed njih:
 
 % Vsaka od vrstic v okolju `itemize` je en element naštevanja.
 % začetek okolja itemize
-   Urnik naj vsebuje čim manj prostih ur za profesorje in študente.
-   Študentje naj se čim manj selijo iz predavalnic.
-   Predmet z veliko urami naj bo enakomerno porazdeljen čez celotno periodo (teden).
-   Predavanja naj se izvajajo ob urah, ki so najugodnejše za poučevanje.
-   V petek naj se študentom dodeli čim manj predavanj.
-   Študentom se naj v času kosila dodeli prosta ura.
+  
+  \begin{itemize}
+    \item Urnik naj vsebuje čim manj prostih ur za profesorje in študente.
+    \item Študentje naj se čim manj selijo iz predavalnic.
+    \item Predmet z veliko urami naj bo enakomerno porazdeljen čez celotno periodo (teden).
+    \item Predavanja naj se izvajajo ob urah, ki so najugodnejše za poučevanje.
+    \item V petek naj se študentom dodeli čim manj predavanj.
+    \item Študentom se naj v času kosila dodeli prosta ura.
+  \end{itemize}
 % konec okolja itemize
-
+\noindent
 % Spodnja vrstica ne začne novega odstavka, zato ne bi smela biti zamaknjena.
 % To popravite z ukazom `\noindent` ali pa tako, da odstranite prazno vrstico.
 % (Nekoliko lepše izgleda, če v prazno vrstico vstavite % za komentar.)
@@ -307,7 +316,6 @@ pomočjo požrešne metode, je lahko namreč še vedno za nekaj nivojev boljši 
 Naslednje vrstice bodo pojasnile, kako implementirati postopek požrešne metode za primer urnika.
 
 % začetek okolja verbatim
-
 \begin{verbatim}
    (1) Sprehod po vseh predmetih.
    {
@@ -320,7 +328,7 @@ Naslednje vrstice bodo pojasnile, kako implementirati postopek požrešne metode
    }
 \end{verbatim}
 % konec okolja verbatim
-
+\noindent
 % Spodnja vrstica ne začne novega odstavka, zato ne bi smela biti zamaknjena.
 % To popravite z ukazom `\noindent` ali pa tako, da odstranite prazno vrstico.
 % (Nekoliko lepše izgleda, če v prazno vrstico vstavite % za komentar.)
@@ -363,11 +371,14 @@ Na primeru urnika si oglejmo, katere so smiselne operacije:
 
 % Vsaka od vrstic v okolju `itemize` je en element naštevanja.
 % začetek okolja itemize
-   \emph{Vstavljanje} srečanja v urnik.
-   \emph{Brisanje} srečanja iz urnika.
-   \emph{Zamenjava} dveh srečanj v urnik.
+  
+  \begin{itemize}
+    \item \emph{Vstavljanje} srečanja v urnik.
+    \item \emph{Brisanje} srečanja iz urnika.
+    \item \emph{Zamenjava} dveh srečanj v urnik.
+  \end{itemize}
 % konec okolja itemize
-
+\noindent
 % Spodnja vrstica ne začne novega odstavka, zato ne bi smela biti zamaknjena.
 % To popravite z ukazom `\noindent` ali pa tako, da odstranite prazno vrstico.
 % (Nekoliko lepše izgleda, če v prazno vrstico vstavite % za komentar.)
@@ -403,7 +414,7 @@ Nadgradnja lokalnega vzpenjanja je jasno razvidna iz naslednje sheme.
    }
 \end{verbatim}
 % konec okolja verbatim
-
+\noindent
 % Spodnja vrstica ne začne novega odstavka, zato ne bi smela biti zamaknjena.
 % To popravite z ukazom `\noindent` ali pa tako, da odstranite prazno vrstico.
 % (Nekoliko lepše izgleda, če v prazno vrstico vstavite % za komentar.)
@@ -411,26 +422,29 @@ Nadobudnežem priporočamo, da najprej sami razmislijo, kaj je globja vsebina po
 korakov, in si šele nato ogledajo njihov natančen opis.
 
 % začetek okolja enumerate
-   Zunanjo zanko izvajamo, dokler ne dosežemo enega izmed ustavitvenih pogojev.
-   Če nekaj časa kljub spreminjanju operacij nad urnikom vedno znova obstojimo na isti
-   rešitvi, potem to najverjetneje pomeni, da smo prišli do lokalnega ekstrema. Drugi
-   ustavitveni pogoj je zadovoljivo velika vrednost kriterijske funkcije.
-
-   Naključno izberemo okolico trenutne rešitve. Z okolico izberemo tudi operacijo,
-   ki jo izvajamo na tem koraku (npr.~zamenjava dveh srečanj).
-
-   Če v tem koraku izberemo tisto zamenjavo srečanj, ki izmed vseh možnih najbolj
-   poveča vrednost kriterijske funkcije, potem postopamo enako, kot požrešna metoda. Če
-   želimo nadgraditi postopek lokalnega vzpenjanja, ne potrebujemo nujno najboljše možne
-   zamenjave, ampak prvo, ki poveča vrednost kriterijske funkcije. Izjemoma dovolimo tudi
-   tisto zamenjavo, ki vrednost kriterijske funkcije nekoliko zmanjša, kar se na prvi
-   pogled zdi nesmiselno, nas pa dolgoročno pripelje do boljših rešitev.
-
-   Izbrano zamenjavo dveh srečanj izvedemo na trenutnem urniku. Vidimo, da en korak
-   lokalnega vzpenjanja res predstavlja eno spremembo nad urnikom, v konkretnem primeru
-   smo izvedli (eno) zamenjavo dveh srečanj.
+   
+   \begin{enumerate}
+      \item Zunanjo zanko izvajamo, dokler ne dosežemo enega izmed ustavitvenih pogojev.
+      Če nekaj časa kljub spreminjanju operacij nad urnikom vedno znova obstojimo na isti
+      rešitvi, potem to najverjetneje pomeni, da smo prišli do lokalnega ekstrema. Drugi
+      ustavitveni pogoj je zadovoljivo velika vrednost kriterijske funkcije.
+   
+      \item Naključno izberemo okolico trenutne rešitve. Z okolico izberemo tudi operacijo,
+      ki jo izvajamo na tem koraku (npr.~zamenjava dveh srečanj).
+   
+      \item Če v tem koraku izberemo tisto zamenjavo srečanj, ki izmed vseh možnih najbolj
+      poveča vrednost kriterijske funkcije, potem postopamo enako, kot požrešna metoda. Če
+      želimo nadgraditi postopek lokalnega vzpenjanja, ne potrebujemo nujno najboljše možne
+      zamenjave, ampak prvo, ki poveča vrednost kriterijske funkcije. Izjemoma dovolimo tudi
+      tisto zamenjavo, ki vrednost kriterijske funkcije nekoliko zmanjša, kar se na prvi
+      pogled zdi nesmiselno, nas pa dolgoročno pripelje do boljših rešitev.
+   
+      \item Izbrano zamenjavo dveh srečanj izvedemo na trenutnem urniku. Vidimo, da en korak
+      lokalnega vzpenjanja res predstavlja eno spremembo nad urnikom, v konkretnem primeru
+      smo izvedli (eno) zamenjavo dveh srečanj.
+   \end{enumerate}
 % konec okolja enumerate
-
+\noindent
 % Spodnja vrstica ne začne novega odstavka, zato ne bi smela biti zamaknjena.
 % To popravite z ukazom `\noindent` ali pa tako, da odstranite prazno vrstico.
 % (Nekoliko lepše izgleda, če v prazno vrstico vstavite % za komentar.)
@@ -503,7 +517,7 @@ točk, oziroma ki ima največjo vrednost kriterijske funkcije.
    Na vsakem koraku ocenimo izboljšamo rešitev ??. Če je vrednost kriterijske funkcije
    za trenutno rešitev prešla zastavljeno zadovoljivo mejo, potem se program zaključi. Prav tako
    se zaključi, če po ?? korakih še vedno tičimo v istem lokalnem maksimumu.
-
+\noindent
 % Spodnja vrstica ne začne novega odstavka, zato ne bi smela biti zamaknjena.
 % To popravite z ukazom `\noindent` ali pa tako, da odstranite prazno vrstico.
 % (Nekoliko lepše izgleda, če v prazno vrstico vstavite % za komentar.)
@@ -515,8 +529,8 @@ uporabili katero izmed tehnik -- mogoče bi katero izmed teh postopanj dalo celo
 
 % V spodnjem odstavku naj bodo črke G, U in I v ">Graphical User Interface"< podčrtane.
 Sledili smo receptu in s tem izdelali "okusen obrok", treba ga je le še ustrezno postreči
-gostom za mizo. S tem imamo v mislih grafični uporabniški vmesnik (Graphical
-User Interface), ki mora urnik uporabnikom predstaviti na razumljiv in
+gostom za mizo. S tem imamo v mislih grafični uporabniški vmesnik (\underline{G}raphical
+\underline{U}ser \underline{I}nterface), ki mora urnik uporabnikom predstaviti na razumljiv in
 pregleden način. Končnega izgleda izdelka nikakor ne smemo zanemariti, saj je ta med uporabniki
 vreden skoraj toliko kot kakovosten urnik. Odločili smo se, da za razmišljanje o tej temi vaši
 domišljiji pustimo prosto pot.
